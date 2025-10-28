@@ -1,7 +1,3 @@
-Here’s a recruiter-polished `README.md` tailored for GitHub, reflecting your current progress and aligning with Apollonia Dental Practice’s business briefing. It’s modular, clear, and future-ready — perfect for showcasing your CRUD backend and setting the stage for expansion.
-
----
-
 ## 📄 `README.md` — Apollonia Employee App
 
 ```markdown
