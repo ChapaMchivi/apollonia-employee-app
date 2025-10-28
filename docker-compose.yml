@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: apollonia-mongo
+    ports:
+      - "27017:27017"  # Host:Container — standard MongoDB port
+    volumes:
+      - mongo-data:/data/db  # Persistent volume for MongoDB data
+
+  node:  # 🔹 Renamed from 'app' to match Docker Desktop and container name
+    build: .
+    container_name: apollonia-node
+    ports:
+      - "3001:3000"  # Host:Container — avoids local port conflict
+    env_file:
+      - .env  # 🔹 Externalized secrets/config for cleaner versioning
+    depends_on:
+      - mongo
+    volumes:
+      - .:/app  # Mount project directory into container
+    command: npm start  # Start Node.js app
+    healthcheck:  # 🔹 Healthcheck for uptime monitoring and Docker diagnostics
+      test: ["CMD", "curl", "-f", "http://localhost:3000/pingness"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  mongo-data:
+
