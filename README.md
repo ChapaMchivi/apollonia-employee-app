@@ -1,23 +1,23 @@
-## 📄 `README.md` — Apollonia Employee App
+##  `README.md` — Apollonia Employee App
 
 ```markdown
 # Apollonia Employee App
 
 A modular CRUD web application built with Node.js, Express, and MongoDB to manage medical staff and departments for Apollonia Dental Practice.
 
-## 🏥 Project Overview
+##  Project Overview
 
 Apollonia Dental Practice requires an internal employee management system to track medical staff by department. This project scaffolds the backend API for managing employees and departments, forming the foundation for a future full-stack employee and customer relationship management (CRM) platform.
 
-## 🚀 Features Implemented
+##  Features Implemented
 
-- ✅ **GET All Employees** — Retrieve a list of all medical staff
-- ✅ **POST New Employee** — Create employee records with first name, last name, email, and department
-- ✅ **GET All Departments** — Retrieve a list of clinic departments
-- ✅ **POST New Department** — Create new department entries
-- ✅ **PUT Department by ID** — Update department details with validation and duplicate protection
+-  **GET All Employees** — Retrieve a list of all medical staff
+-  **POST New Employee** — Create employee records with first name, last name, email, and department
+-  **GET All Departments** — Retrieve a list of clinic departments
+-  **POST New Department** — Create new department entries
+-  **PUT Department by ID** — Update department details with validation and duplicate protection
 
-## 🧠 Business Context
+##  Business Context
 
 Apollonia Dental Practice currently has:
 
@@ -43,7 +43,7 @@ Apollonia Dental Practice currently has:
 - **Containerization**: Docker, docker-compose
 - **API Testing**: Postman
 
-## 📦 Folder Structure
+##  Folder Structure
 
 ```
 ├── models/
@@ -66,7 +66,7 @@ Apollonia plans to expand this system into a full CRM platform with:
 - Revenue analytics per patient and staff member
 - Integrated customer relationship workflows
 
-## 🧪 Local Setup
+##  Local Setup
 
 ```bash
 git clone https://github.com/your-username/apollonia-employee-app.git
@@ -76,11 +76,11 @@ docker-compose up --build
 
 Access the API at `http://localhost:3001/api/employees` and `http://localhost:3001/api/departments`.
 
-## 🤝 Contributing
+##  Contributing
 
 This project is part of a modular build pipeline toward a full-stack healthcare CRM. Contributions welcome as new features are scoped.
 
-## 📄 License
+##  License
 
 MIT
 ```
